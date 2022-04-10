@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="40px" viewBox="0 0 50 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>easy returns</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="50" height="40"/>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="easy-returns">
+            <g id="Group-32">
+                <g id="Group-10">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"/>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"/>
+                    <g mask="url(#mask-2)" stroke-linecap="round">
+                        <g transform="translate(3.000000, -3.000000)">
+                            <path d="M22,37.6129032 C30.6227684,37.6129032 37.6129032,30.6227684 37.6129032,22 C37.6129032,13.3772316 30.6227684,6.38709677 22,6.38709677 C13.3772316,6.38709677 6.38709677,13.3772316 6.38709677,22 C6.38709677,24.2590656 6.86688525,26.4060706 7.73012174,28.3446746" id="Oval" stroke="#596988" stroke-width="1.4" transform="translate(22.000000, 22.000000) scale(-1, 1) rotate(50.000000) translate(-22.000000, -22.000000) "/>
+                            <g id="Group-65" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(14.903226, 14.562581)">
+                                <path d="M6.50279591,1.63935484 C8.16043018,3.76193642 8.77801314,5.52903831 8.35554478,6.9406605 C7.93307643,8.35228269 6.14670009,8.96332658 2.99641577,8.77379217 L8.98924731,15.0522581" id="Path-3" stroke="#596988" stroke-width="1.4" stroke-linejoin="round"/>
+                                <path d="M0.561827957,0.7 L12.922043,0.7" id="Line-5" stroke="#596988" stroke-width="1.4"/>
+                                <polyline id="Line-5" stroke="#596988" stroke-width="1.4" points="0.561827957 4.62 8.95182527 4.62 12.922043 4.62"/>
+                            </g>
+                            <polyline id="Path-2" stroke="#596988" stroke-width="1.4" stroke-linejoin="round" points="32.6451613 15.2106052 37.6129032 17.0322581 37.6129032 12.0645161"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

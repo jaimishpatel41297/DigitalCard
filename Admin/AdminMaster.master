@@ -1,0 +1,782 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="Admin_AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <meta charset="utf-8">
+    <title>Digital Business Card</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:image" itemprop="image" content="http://digitalbcards.in/upload/" />
+    <meta property="og:title" content="digital business card" />
+    <meta property="og:description" content="Say bye to paper business card." />
+
+    <!-- 
+<script type="application/ld+json">
+ {
+"@context": "http://schema.org/",
+"@type": "ImageObject",
+ "url": "http://digitalbcards.in/upload/",
+    "height": 200,
+    "width": 200
+
+ }
+ </script> -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon1.ico">
+    <link rel="manifest" href="http://peak.batchthemes.com/assets/icons/manifest.json">
+
+    <meta name="msapplication-TileImage" content="assets/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="css/font/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/flag-icon.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/weather-icons.min.css" />
+    <link rel="icon" sizes="192x192" href="/assets/img/icon.png">
+    <link rel="icon" sizes="128x128" href="/assets/img/icon.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="/assets/img/icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="/assets/img/icon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--     <link rel="stylesheet" type="text/css" href="bower_components/fakeLoader/fakeLoader.css" /> -->
+
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" />
+    <link rel="stylesheet" type="text/css" href="components/css/zoom.css" />
+    <!-- endbuild -->
+    <!-- build:css css/styles.css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/box-shadows.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/layouts/homepage.css">
+    <link rel="stylesheet" type="text/css" href="css/layouts/default-sidebar-1.css">
+
+    <link rel="stylesheet" type="text/css" href="css/layouts/top-navigation-1.css">
+
+    <link rel="stylesheet" type="text/css" href="css/layouts/off-canvas.css">
+    <link rel="stylesheet" type="text/css" href="css/layouts/fixed-navbar-1.css">
+    <link rel="stylesheet" type="text/css" href="css/elements/left-sidebar-1.css">
+    <link rel="stylesheet" type="text/css" href="css/elements/navbar-1.css">
+    <link rel="stylesheet" type="text/css" href="css/elements/navbar-2.css">
+    <link rel="stylesheet" type="text/css" href="css/elements/navbar-3.css">
+    <link rel="stylesheet" type="text/css" href="css/elements/top-search.css">
+    <link rel="stylesheet" type="text/css" href="css/elements/top-navigation-1.css">
+    <link rel="stylesheet" type="text/css" href="css/elements/right-sidebar-1.css">
+    <link rel="stylesheet" type="text/css" href="css/elements/jumbotron-1.css">
+    <link rel="stylesheet" type="text/css" href="css/elements/jumbotron-2.css">
+    <link rel="stylesheet" type="text/css" href="css/elements/jumbotron-3.css">
+    <link rel="stylesheet" type="text/css" href="css/dashboards/geographic.css">
+
+    <link rel="stylesheet" type="text/css" href="css/helpers/margin.css">
+    <link rel="stylesheet" type="text/css" href="css/helpers/padding.css">
+    <link rel="stylesheet" type="text/css" href="css/helpers/text.css">
+    <link rel="stylesheet" type="text/css" href="css/helpers/border.css">
+    <link rel="stylesheet" type="text/css" href="css/helpers/height.css">
+    <link rel="stylesheet" type="text/css" href="css/helpers/width.css">
+    <link rel="stylesheet" type="text/css" href="css/colors.css">
+    <link rel="stylesheet" type="text/css" href="css/text-widget-1.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/helpers/other.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/icons/flags.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/icons/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/icons/weather-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/icons/material-design-icons.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/extras/white-frames.css">
+
+    <link rel="stylesheet" type="text/css" href="css/forms/sliders.css">
+    <link rel="stylesheet" type="text/css" href="css/forms/toggles.css">
+
+    <link rel="stylesheet" type="text/css" href="css/forms/steps.css">
+
+    <link rel="stylesheet" type="text/css" href="css/pages/index.css">
+
+    <link rel="stylesheet" type="text/css" href="css/pages/sign-in.css">
+    <link rel="stylesheet" type="text/css" href="css/pages/sign-up.css">
+
+    <link rel="stylesheet" type="text/css" href="css/pages/forgot-password.css">
+
+    <link rel="stylesheet" type="text/css" href="css/ui/breadcrumbs.css">
+    <link rel="stylesheet" type="text/css" href="css/ui/buttons.css">
+    <link rel="stylesheet" type="text/css" href="css/ui/cards.css">
+    <link rel="stylesheet" type="text/css" href="css/ui/dropdowns.css">
+    <link rel="stylesheet" type="text/css" href="css/ui/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/ui/images.css">
+    <link rel="stylesheet" href="plugins/select2/select2.min.css">
+    <link rel="stylesheet" href="css/intlTelInput.css">
+    <!-- <link rel="stylesheet" href="css/demo.css"> -->
+
+    <!--       <script>
+   
+   $(document).ready(function() {
+     $("#show_hide").click(function () {
+     $("#toggle_tst").toggle()
+  });
+  });
+</script> -->
+    <style type="text/css">
+        .intl-tel-input {
+            width: 100%;
+        }
+
+
+
+
+        .loading [data-layout="default-sidebar-1"] .navbar-1, .loading [data-layout="default-sidebar-1"] .jumbotron-1, .loading [data-layout="default-sidebar-1"] > .container-fluid {
+            visibility: visible;
+        }
+
+        html:not(.loading) [data-layout="default-sidebar-1"][data-navbar="primary"] {
+            color: #333 !important;
+        }
+
+        .select2-container--default .select2-selection--multiple {
+            background-color: #07314a; /*#d49100*/
+            ;
+            border-bottom: 1px solid #fff;
+        }
+
+        .select2-container--default .select2-selection--multiple {
+            border-bottom: 1px solid #fff;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+        }
+
+        .select2-container--default.select2-container--focus .select2-selection--multiple {
+            border: solid white 1px;
+            outline: 0;
+        }
+
+
+        /*.modal-header .close {
+    margin-top: -31px;
+}
+*/
+
+        .newse {
+            padding-top: 3%;
+        }
+
+        .reg1 {
+            white-space: nowrap !important;
+            color: red !important;
+            display: inherit;
+            padding-top: 27px;
+            vertical-align: middle;
+            display: table-cell;
+            padding-left: 2%;
+        }
+
+        .bmd-form-group .bmd-label-static {
+            top: 0rem;
+            left: 0px;
+            font-size: 0.75rem;
+        }
+
+
+        /*newdesign*/
+        /*[data-sidebar="primary"] .content .content-top {
+    background: #d49100 !important;
+    color: #ffffff;
+}
+[data-sidebar="primary"] .content .left-sidebar-section > ul > li .btn-flat:hover {
+    background-color: #07314a !important;
+    color: #ffffff;
+}
+.left-sidebar-1 .wrapper .content .left-sidebar-section ul li .btn-flat
+{
+        background: #d49100;
+}*/
+
+        /*end*/
+
+        /*@media only screen and (max-width: 600px) {
+   .btnsz {
+    width: 100%;
+}
+}
+@media only screen and (min-width: 600px) {
+   .btnsz {
+    width: 100%;
+}
+}*/
+        .btn.btn-primary.active, .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:focus:active, .btn.btn-primary:active, .btn.btn-primary[disabled].active, .btn.btn-primary[disabled]:hover, .btn.btn-primary[disabled]:focus, .btn.btn-primary[disabled]:focus:active, .btn.btn-primary[disabled]:active {
+            background: #f58569;
+            color: #07314a;
+        }
+
+        .btn.btn-primary, .btn.btn-primary[disabled] {
+            background: #fff !important;
+            color: #07314a;
+            font-size: #fff;
+        }
+
+        [data-layout="default-sidebar-1"] .main .page-on-top {
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 0%;
+            background: #07314a;
+            box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.2), 0px 7px 10px 1px rgba(0, 0, 0, 0.14), 0px 2px 16px 1px rgba(0, 0, 0, 0.12);
+            padding: 40px;
+            -webkit-transform: translate3d(0, -60px, 0);
+            transform: translate3d(0, -60px, 0);
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+        [data-layout="default-sidebar-1"] .main .page-on-top2 {
+            background: #d49100 !important;
+        }
+
+        .breadcrumb > li {
+            padding-left: 10px;
+        }
+
+        .qrimg img {
+            height: 70px;
+            width: 70px;
+        }
+
+        .dbtt1 {
+            line-height: 1.5;
+        }
+
+        .select2-container--default .select2-search--inline .select2-search__field {
+            color: #fff;
+        }
+
+        .facardwt {
+            margin-right: 2px !important;
+            background: #13990a !important;
+            padding: 10px 8px !important;
+            height: 32px !important;
+            color: #fff;
+            width: 32px !important;
+            font-size: 14px !important;
+            border-radius: 20px !important;
+        }
+
+        .facardfb {
+            margin-right: 2px !important;
+            background: #3b579d !important;
+            padding: 10px 8px !important;
+            height: 32px !important;
+            color: #fff;
+            width: 32px !important;
+            font-size: 14px !important;
+            border-radius: 20px !important;
+        }
+
+        .facardtt {
+            margin-right: 2px !important;
+            background: #55acee !important;
+            padding: 10px 8px !important;
+            height: 32px !important;
+            color: #fff;
+            font-size: 14px !important;
+            width: 32px !important;
+            border-radius: 20px !important;
+        }
+
+        .facardgp {
+            margin-right: 2px !important;
+            background: #e02828 !important;
+            padding: 10px 8px !important;
+            height: 32px !important;
+            color: #fff;
+            font-size: 14px !important;
+            width: 32px !important;
+            border-radius: 20px !important;
+        }
+
+        .facardld {
+            margin-right: 2px !important;
+            background: #0481bf !important;
+            padding: 10px 8px !important;
+            height: 32px !important;
+            color: #fff;
+            font-size: 14px !important;
+            width: 32px !important;
+            border-radius: 20px !important;
+        }
+
+        .facardml {
+            margin-right: 2px !important;
+            background: #000 !important;
+            padding: 10px 8px !important;
+            height: 32px !important;
+            color: #fff;
+            font-size: 14px !important;
+            width: 32px !important;
+            border-radius: 20px !important;
+        }
+
+
+
+
+
+
+
+
+
+
+        @media only screen and (max-width: 1920px) {
+            .unbox {
+                display: none;
+            }
+
+            .untext {
+                display: inline-block;
+            }
+        }
+
+        @media only screen and (max-width: 1024px) { /*
+    [data-layout="default-sidebar-1"] .main .page-on-top {
+         margin-top: 8%;}*/
+        }
+
+
+        @media only screen and (max-width: 800px) {
+
+            .addindex {
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+        }
+
+
+
+
+
+        @media only screen and (max-width: 767px) {
+
+            .select2-container--default .select2-selection--multiple {
+                background-color: /* #07314a;*/ #07314a;
+            }
+
+            .modal-open .modal {
+                width: 100%;
+            }
+
+            .addindex {
+                padding-right: 0px;
+                padding-left: 0px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            /* [data-layout="default-sidebar-1"] .main .page-on-top 
+{
+         margin-top: 15%;
+     }*/
+        }
+
+        @media only screen and (max-width: 360px) { /*[data-layout="default-sidebar-1"] .main .page-on-top {
+         margin-top: 20%;}
+}*/
+        }
+    </style>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="dashboards-geographic" data-layout="default-sidebar-1" data-sidebar="primary" data-navbar="primary" data-controller="dashboards" data-view="geographic">
+    <form id="form1" runat="server">
+        <!-- navbar -->
+        <style type="text/css">
+            .qrimg img {
+                height: 70px;
+                width: 70px;
+            }
+
+            @media only screen and (max-width: 1920px) {
+                .unbox {
+                    display: none;
+                }
+            }
+
+            @media only screen and (max-width: 800px) {
+
+                .unbox {
+                    display: inherit;
+                    margin-top: 0px;
+                }
+
+                .resicon {
+                    margin-top: 15px;
+                }
+
+                .untext {
+                    display: none;
+                }
+            }
+        </style>
+        <nav class="navbar-1" style="height: 85px;">
+            <ul class="nav nav-inline navbar-left">
+                <li cass="nalv-item " style="float: left;">
+                    <a class="nav-link toggle-layout resicon" href="#">
+                        <i class="material-icons menu"><span>menu</span></i>
+                    </a>
+                </li>
+
+                <li cass="nalv-item">
+                    <div class="unbox " style="text-align: center;">
+                        <a href="index.php">
+                            <img src="assets/img/dbc.svg" class="img-responsive  center-block" style="width: 65px;"></a>
+                    </div>
+                </li>
+
+
+
+            </ul>
+
+
+
+            <!-- <span class="welcome" style="font-size: 15px;padding-top: 11px;"><i class="fa fa-user"></i> </span> -->
+
+            <!-- <div class="dropdown user-dropdown">
+            <a class="dropdown-toggle no-after" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="badge badge-40">
+                     <span class="tag tag-sm tag-rounded tag-warning">1</span> 
+                     <img src="assets/faces/w2.png" class="max-w-40 img-circle" alt="badge" /> 
+                </div>
+            </a>
+            <div class=" dropdown-menu dropdown-menu-right from-right">
+              
+                <a class="dropdown-item" href="logout.php">
+                    <i class="material-icons icon">power_settings_new</i>
+                    <span class="title">Logout</span>
+                </a>
+            </div>
+        </div> -->
+            <!-- <a class="navbar-right btn btn-flat toggle-right-sidebar" href="#">
+            <i class="material-icons">arrow_forward</i>
+        </a> -->
+        </nav>
+
+
+        <div class="left-sidebar-1">
+            <div class="wrapper">
+                <div class="content">
+                    <div class="content-top">
+                        <div class="logo">
+                            <!--  <a href="#" class="text">
+                                    <img src="assets/img/logo1.png" height="100px" width="180px">
+                                    <span>Peak</span>
+                                </a> -->
+                            <center> <a href="#" class="text">
+
+                                <asp:Literal runat="server" ID="Ltrpic"></asp:Literal>
+                                    <%--<img src="img/001.jpg" height="70px" width="70px" class="img-circle peaktp"><br>
+
+                                    <span class="peak" style="color:#fff;"></span>--%>
+                                </a></center>
+
+                        </div>
+
+                        <div class="sidebar-heading">
+                        </div>
+                    </div>
+                    <div class="content-bottom">
+                        <div class="left-sidebar-section">
+
+                            <!-- <div class="section-title">Navigation</div> -->
+                            <ul class="list-unstyled" id="navigation">
+                                <li>
+                                    <a href="Profile.aspx">
+                                       
+                                        <div class="btn btn-flat">
+                                            <!-- <span class="tag tag-rounded tag-danger tag-sm">5</span> -->
+                                            <span class="btn-title">Dashboard</span>
+                                            <i class="material-icons pull-left icon">dashboard</i>
+
+                                        </div>
+                                    </a>
+
+                                </li>
+                                <%--<li>
+                                    <a href="my_leads.html">
+                                        <button class="btn btn-flat ">
+
+                                            <span class="btn-title">My Contact</span>
+                                            <i class="material-icons pull-left icon">people_outline</i>
+
+                                        </button>
+                                    </a>
+                                </li>--%>
+
+                                <li>
+
+                                    <asp:Literal ID="ltrid" runat="server"></asp:Literal>
+                                   
+                                </li>
+                                <li>
+                                    <a href="AboutMe.aspx">
+                                        <div class="btn btn-flat ">
+
+                                            <span class="btn-title">Change DBCard Info</span>
+                                            <i class="fa fa-pencil-square-o"></i>
+
+
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="MessageSetting.aspx">
+                                        <div class="btn btn-flat ">
+
+                                            <span class="btn-title">Message Settings</span>
+                                            <i class="material-icons pull-left icon">share</i>
+
+
+                                        </div>
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="Addoffer.aspx" target="_blank">
+                                        <div class="btn btn-flat ">
+
+                                            <span class="btn-title">Add Offer</span>
+                                            <i class="fa fa-id-card" aria-hidden="true"></i>
+
+                                        </div>
+                                    </a>
+                                </li>
+                                <!--    <li>
+                                        <a href="all_task.php"><button class="btn btn-flat ">
+                                           
+                                            <span class="btn-title">To Do List</span>
+                                             <i class="material-icons pull-left icon"> date_range</i>
+                                 
+
+                                        </button> </a>
+                                    </li> -->
+                              <%--  <li>
+                                    <a href="Cardlink.aspx">
+                                        <div class="btn btn-flat ">
+
+                                            <span class="btn-title">My Referral</span>
+                                            <i class="fa fa-link"></i>
+
+
+                                        </div>
+                                    </a>
+                                </li>--%>
+                                <%--<li>
+                                    <a href="directory.html">
+                                        <button class="btn btn-flat ">
+
+                                            <span class="btn-title">My Directory</span>
+                                            <i class="material-icons pull-left icon">next_week</i>
+
+
+                                        </button>
+                                    </a>
+                                </li>--%>
+
+                                <!--      <li>
+                                        <a href="sms_broad.php"><button class="btn btn-flat ">
+                                      
+                                            <span class="btn-title">Bulk SMS</span>
+                                            <i class="material-icons pull-left icon">mail</i>
+                                          
+
+                                        </button> </a>
+                                    </li> -->
+                                <!--                <li>
+                                        <a href="birth_anniversory.php"><button class="btn btn-flat ">
+                                           
+                                            <span class="btn-title">Birthday & Anniversary</span>
+                                             <i class="material-icons pull-left icon">cake</i>
+                                 
+
+                                        </button> </a>
+                                    </li> -->
+
+                                <%--<li>
+                                    <a href="support.html">
+                                        <button class="btn btn-flat ">
+
+                                            <span class="btn-title">Customer Care</span>
+                                            <i class="material-icons pull-left icon">contact_phone</i>
+
+
+                                        </button>
+                                    </a>
+                                </li>--%>
+                                <%--<li>
+                                    <a href="change-password.html">
+                                        <div class="btn btn-flat ">
+
+                                            <span class="btn-title">Settings</span>
+                                            <i class="fa fa-cogs pull-left icon"></i>
+
+
+                                        </div>
+                                    </a>
+                                </li>--%>
+
+                                <li>
+                                    <a href="logout.aspx">
+                                        <div class="btn btn-flat ">
+
+                                            <span class="btn-title">SignOut</span>
+                                            <i class="material-icons pull-left icon">exit_to_app</i>
+
+
+                                        </div>
+                                    </a>
+                                </li>
+                               <%-- <li>
+                                    <a href="logout.html">
+                                        <div class="btn btn-flat ">
+
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="logout.html">
+                                        <div class="btn btn-flat ">
+
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="logout.html">
+                                        <div class="btn btn-flat ">
+
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="logout.html">
+                                        <div class="btn btn-flat ">
+
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="logout.html">
+                                        <div class="btn btn-flat ">
+
+                                        </div>
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="logout.html">
+                                        <div class="btn btn-flat ">
+
+                                        </div>
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="logout.html">
+                                        <div class="btn btn-flat ">
+
+                                        </div>
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="logout.html">
+                                        <div class="btn btn-flat ">
+
+                                        </div>
+                                    </a>
+                                </li>--%>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <!-- build:js js/vendor.js -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/lodash/dist/lodash.min.js"></script>
+        <script src="components/scripts/modernizr.js"></script>
+        <script src="bower_components/tether/dist/js/tether.js"></script>
+        <script src="bower_components/jquery-storage-api/jquery.storageapi.min.js"></script>
+
+        <script src="bower_components/mousetrap/mousetrap.js"></script>
+        <script src="bower_components/bootstrap-material-design/dist/bootstrap-material-design.iife.js"></script>
+
+        <script src="bower_components/fakeLoader/fakeLoader.min.js"></script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=weather,visualization,panoramio&amp;key=AIzaSyDRuAzjz4dLpeQnvW4D8qZ7mX-G0pAZEcI"></script>
+        <!-- build:js js/main.js -->
+        <script src="scripts/functions.js"></script>
+        <script src="scripts/colors.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/elements/left-sidebar.js"></script>
+        <script src="scripts/elements/navbar-1.js"></script>
+        <script src="scripts/elements/navbar-2.js"></script>
+        <script src="scripts/elements/navbar-3.js"></script>
+
+        <script src="scripts/icons/material-design-icons.js"></script>
+        <script src="scripts/icons/font-awesome.js"></script>
+        <script src="scripts/icons/flags.js"></script>
+        <script src="scripts/icons/ionicons.js"></script>
+        <script src="scripts/icons/weather-icons.js"></script>
+
+        <script src="scripts/pages/index.js"></script>
+        <script type="text/javascript">
+
+            function AllowNumbersOnly(e) {
+                var code = (e.which) ? e.which : e.keyCode;
+                if (code > 31 && (code < 48 || code > 57)) {
+                    e.preventDefault();
+                }
+            }
+
+            $(document).ready(function () {
+                //called when key is pressed in textbox
+                $("#phone").keypress(function (e) {
+                    //if the letter is not digit then display error and don't type anything
+                    if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                        //display error message
+                        //$("#errmsg").html("Digits Only").show().fadeOut("slow");
+                        return false;
+                    }
+                });
+
+                $("#whatsapp_no").keypress(function (e) {
+                    //if the letter is not digit then display error and don't type anything
+                    if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                        //display error message
+                        //$("#errmsg").html("Digits Only").show().fadeOut("slow");
+                        return false;
+                    }
+                });
+
+
+            });
+        </script>
+        <!-- endbuild -->
+
+        <script>
+
+            $('.cropme').simpleCropper();
+
+                        </script>
+
+
+
+
+    </form>
+</body>
+</html>
